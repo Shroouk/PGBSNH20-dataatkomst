@@ -40,11 +40,12 @@ permalink: /lectures/
       <div class="card-header text-center">
       <h4>Vecka: {{week.week}}</h4>
       </div>
-      <div class="card-body">
-      {% for day in week.days %}
+       {% for day in week.days %}
             {% if day.activities %}
 {% for activity in day.activities %}
 {% if activity.activity == "lecture" %}
+      <div class="card-body">
+     
       <div class="row mt-3">
 
       <h6 class="card-subtitle mb-2 text-muted postlower ml-3">{{ activity.start-full | date: "%F"}} - {{day.weekday}}</h6>
