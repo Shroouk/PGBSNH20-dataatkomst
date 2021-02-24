@@ -40,17 +40,18 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
 
   <div class="accordion" id="accordionExample">
 {% for topic in site.data.lecture_csharp_refresh.topics %}
+{% assign i = 1 %}
             <div class="card">
                 <div class="card-header" id="headingOne">
                   <h2 class="mb-0 w-100">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target=".{{topic.topic}}" aria-expanded="false" aria-controls="{{topic.topic}}">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#i" aria-expanded="false" aria-controls="i">
                       <h3 id="object-oriented-programming-and-c"><i class="bi bi-caret-right-fill"></i> 
                       {{topic.topic}}
                       </h3>
                     </button>
                   </h2>
                 </div>
-                <div id="collapseOne" class="collapse show {{topic.topic}}" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div id="i" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                   <div class="card-body">
                   <ul>
                   {% for mandatory in topic.literature %}
@@ -74,4 +75,5 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
                   </div>
                 </div>
                 </div>
+                {% assign i++%}
                 {% endfor %}
