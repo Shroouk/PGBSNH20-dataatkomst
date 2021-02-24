@@ -40,12 +40,11 @@ permalink: /lectures/
       <div class="card-header text-center">
       <h4>Vecka: {{week.week}}</h4>
       </div>
-     
-      <div class="card-body">
-       {% for day in week.days %}
+      {% for day in week.days %}
       {% if day.activities %}
       {% for activity in day.activities %}
       {% if activity.activity == "lecture" %}
+      <div class="card-body">
      
       <div class="row mt-3">
 
@@ -63,7 +62,7 @@ permalink: /lectures/
             {% endif %}
       {% endfor %}
       
-
+{% endfor %}
 
      
 
@@ -74,6 +73,6 @@ permalink: /lectures/
       </div>
 </div>
 </div>
-{% endfor %}
+
 </div>
 
