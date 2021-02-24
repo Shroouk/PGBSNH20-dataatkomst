@@ -52,6 +52,7 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
 
 
 
+
   <div class="accordion" id="accordionExample">
 {% for topic in site.data.lecture_csharp_refresh.topics %}
   <div class="card">
@@ -69,8 +70,18 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
                   <div class="card-body">
                     <ul>
                     {% for mandatory in topic.literature %}
-                    * [{{mandatory.title}}]({{mandatory.url}})
-                      
+                      <li>
+                       
+                        <p>
+                       <a href="[{{mandatory.title}}]({{mandatory.url}})">{{mandatory.title}}</a>
+                       
+                        
+                            <span class="badges">
+                            <span class="badge badge-info">article</span><span class="badge badge-secondary">12 min</span>
+                          </span>
+                          </p>
+                          
+                      </li>
                       {% endfor %}
                       
                     </ul>
