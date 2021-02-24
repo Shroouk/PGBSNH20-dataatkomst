@@ -14,6 +14,9 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
 
 
 
+
+
+
   <div class="card schedule-card">
           <div class="card-body">
             <div class="row">
@@ -66,18 +69,8 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
                   <div class="card-body">
                     <ul>
                     {% for mandatory in topic.literature %}
-                      <li>
-                       
-                        <p>
-                       
-                        * [{{mandatory.title}}]({{mandatory.url}})
-                        
-                            <span class="badges">
-                            <span class="badge badge-info">article</span><span class="badge badge-secondary">12 min</span>
-                          </span>
-                          </p>
-                          
-                      </li>
+                    * [{{mandatory.title}}]({{mandatory.url}})
+                      
                       {% endfor %}
                       
                     </ul>
