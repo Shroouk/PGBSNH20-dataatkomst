@@ -53,8 +53,10 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
 
 
 
-  <div class="accordion" id="accordionExample">
+ 
 {% for topic in site.data.lecture_csharp_refresh.topics %}
+  <div class="accordion" id="accordionExample">
+
   <div class="card">
                 <div class="card-header" id="headingOne">
                   <h2 class="mb-0 w-100">
@@ -97,6 +99,7 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
                 </div>
               </div>
 
-              {% endfor %}
+             
               
              </div>   
+              {% endfor %}
