@@ -75,5 +75,5 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
                   </div>
                 </div>
                 </div>
-                {% assign i++%}
+                {% capture _ %}{% increment i %}{% endcapture %
                 {% endfor %}
