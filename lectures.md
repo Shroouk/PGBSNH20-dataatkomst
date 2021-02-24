@@ -62,7 +62,7 @@ permalink: /lectures/
             {% endif %}
       {% endfor %}
       
-{% endfor %}
+
 
      
 
@@ -73,5 +73,6 @@ permalink: /lectures/
       </div>
 </div>
 </div>
-
+{% endfor %}
 </div>
+
