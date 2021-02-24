@@ -41,7 +41,7 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
   <div class="accordion" id="accordionExample">
   
 {% for topic in site.data.lecture_csharp_refresh.topics %}
-{% assign i = 1 %}
+{% assign i  %}
             <div class="card">
                 <div class="card-header" id="headingOne">
                   <h2 class="mb-0 w-100">
