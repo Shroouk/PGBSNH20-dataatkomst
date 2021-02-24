@@ -12,7 +12,7 @@ permalink: /lectures/
 
 
 
- <div class="row mt-3">
+ <div class="row">
   {% for week in site.data.schedule.weeks %}                         
 <div class="col-lg-4">
 <div class="card lectures-card">
