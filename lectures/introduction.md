@@ -13,7 +13,7 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
 
  
  
- 
+
 
   <div class="card schedule-card">
           <div class="card-body">
