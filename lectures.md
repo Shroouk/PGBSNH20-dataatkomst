@@ -58,22 +58,23 @@ permalink: /lectures/
             </ul>
 
       </div>
-       {% endif %}
-      {% endfor %}
-            {% endif %}
-      {% endfor %}
       
-{% endfor %}
+      
+
 
      
 
       </div>
+       {% endif %}
+      {% endfor %}
+            {% endif %}
+      {% endfor %}
       <div class="card-footer text-center">
 
 
       </div>
 </div>
 </div>
-
+{% endfor %}
 </div>
 
