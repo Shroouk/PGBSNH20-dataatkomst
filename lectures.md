@@ -75,4 +75,3 @@ permalink: /lectures/
 </div>
 
 </div>
-
