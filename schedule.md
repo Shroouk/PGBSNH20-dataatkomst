@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: lecture
 title: Schema
 permalink: /schedule/
 ---
