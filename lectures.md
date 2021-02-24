@@ -10,10 +10,7 @@ permalink: /lectures/
 {% for week in site.data.schedule.weeks %}
       <b>Vecka</b>: {{week.week}}<br/>
       
-      {% for day in week.days %}
-            {% if day.activities %}
-{% for activity in day.activities %}
-{% if activity.activity == "lecture" %}
+      
 <li class="archiveposturl">
         <span class="postlower">{{ activity.start-full | date: "%F"}} - {{day.weekday}}</span><br>
         <span><a href="{{ activity.slug | prepend: site.baseurl }}">{{ activity.title }}</a></span><br>
@@ -40,38 +37,40 @@ permalink: /lectures/
       <div class="card-header text-center">
       <h4>Vecka: {{week.week}}</h4>
       </div>
-       {% for day in week.days %}
-      {% if day.activities %}
-      {% for activity in day.activities %}
-      {% if activity.activity == "lecture" %}
-      <div class="card-body">
-     
-      <div class="row mt-3">
+       
+      
 
+      <div class="card-body">
+    
+      <div class="row mt-3">
+        {% for day in week.days %}
+        {% if day.activities %}
       <h6 class="card-subtitle mb-2 text-muted postlower ml-3">{{ activity.start-full | date: "%F"}} - {{day.weekday}}</h6>
             <ul class="list-group lectures-list lec-first">
+                     
+{% for activity in day.activities %}
+{% if activity.activity == "lecture" %}
             <li class="list-group-item"><i class="bi bi-chevron-double-right lec-icon"></i> <a href="{{ activity.slug | prepend: site.baseurl }}">{{ activity.title }}</a>
             {% if activity.discussion %}(<i class="fa fa-comments" aria-hidden="true"></i> <a href="{{activity.discussion}}">{{activity.title}}</a>)<br>{% endif %}
                   <p class="description"> {{ activity.description }}</p>
                   </li>
+                  {% endif %}
+                  {% endfor %}
             </ul>
 
+            {% endif %}
+            {% endfor %}
       </div>
      
+
+      </div>
       
-
-
      
-
-      </div>
-     
-        {% endif %}
-      {% endfor %}
            
        
 </div>
-{% endif %}
-      {% endfor %}
+
+      
 </div>
 {% endfor %}
 </div>
