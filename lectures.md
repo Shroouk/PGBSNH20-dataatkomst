@@ -36,15 +36,14 @@ permalink: /lectures/
  <div class="row ">
   {% for week in site.data.schedule.weeks %}                         
 <div class="col-lg-4">
-{% for day in week.days %}
-            {% if day.activities %}
-      {% for activity in day.activities %}
-      {% if activity.activity == "lecture" %}
 <div class="card lectures-card">
       <div class="card-header text-center">
       <h4>Vecka: {{week.week}}</h4>
       </div>
-       
+      {% for day in week.days %}
+      {% if day.activities %}
+      {% for activity in day.activities %}
+      {% if activity.activity == "lecture" %}
       <div class="card-body">
      
       <div class="row mt-3">
