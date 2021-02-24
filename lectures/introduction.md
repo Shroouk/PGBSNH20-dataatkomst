@@ -36,3 +36,15 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
 {% endfor %}
           </div>
         </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        {% for activity in site.data.schedule.weeks[0].days[0].activities %}
+* {{ activity.start-full | date: "%R"}} - {{ activity.end-full | date: "%R"}} : {% if activity.discussion %}<i class="fa fa-comments" aria-hidden="true"></i> [{{activity.title}}]({{activity.discussion}}) (delta aktivt i diskussionen){% else %}{{activity.title}} {% endif %}
+{% endfor %}
