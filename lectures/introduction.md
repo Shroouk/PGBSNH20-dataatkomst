@@ -18,9 +18,7 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
 
 
 
-
-
-  <div class="card schedule-card">
+<div class="card schedule-card">
           <div class="card-body">
             <div class="row">
                 <h5 class="pl-3"><i class="bi bi-calendar-week"></i> Lektion från kl. 8:30 till kl. 16:30 </h5>
@@ -35,7 +33,7 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
               
               <div class="col-sm-11 schedule-txt">
                * {{ activity.start-full | date: "%R"}} - {{ activity.end-full | date: "%R"}} : {% if activity.discussion %}<i class="fa fa-comments" aria-hidden="true"></i> [{{activity.title}}]({{activity.discussion}}) (delta aktivt i diskussionen){% else %}{{activity.title}} {% endif %}
-{% endfor %}
+
               </div>
             </div>
 
