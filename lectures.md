@@ -41,10 +41,10 @@ permalink: /lectures/
       
 
       <div class="card-body">
-    
-      <div class="row mt-3">
         {% for day in week.days %}
         {% if day.activities %}
+      <div class="row mt-3">
+        
       <h6 class="card-subtitle mb-2 text-muted postlower ml-3">{{ activity.start-full | date: "%F"}} - {{day.weekday}}</h6>
             <ul class="list-group lectures-list lec-first">
                      
@@ -58,11 +58,12 @@ permalink: /lectures/
                   {% endfor %}
             </ul>
 
-            {% endif %}
-            {% endfor %}
-      </div>
+            
      
 
+      </div>
+      {% endif %}
+            {% endfor %}
       </div>
       
      
