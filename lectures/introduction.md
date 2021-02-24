@@ -30,7 +30,7 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
                 * {{ activity.start-full | date: "%R"}} - {{ activity.end-full | date: "%R"}} : 
               </div>
               <div class="col-sm-9 schedule-txt">
-               {% if activity.discussion %} <i class="fa fa-comments" aria-hidden="true"></i> [{{activity.title}}]({{activity.discussion}}) (delta aktivt i diskussionen){% else %}{{activity.title}} {% endif %}
+               {% if activity.discussion %}<i class="fa fa-comments" aria-hidden="true"></i> [{{activity.title}}]({{activity.discussion}}) (delta aktivt i diskussionen){% else %}{{activity.title}} {% endif %}
               </div>
             </div>
 
