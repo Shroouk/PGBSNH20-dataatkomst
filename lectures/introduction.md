@@ -52,7 +52,7 @@ Denna lektion är en introduktion till kursen, samt dom första steg med projekt
                     </button>
                   </h2>
                 </div>
-                <div id="ex{{forloop.index0}}" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div id="ex{{forloop.index0}}" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
                   <div class="card-body">
                   <ul>
                   {% for mandatory in topic.literature %}
