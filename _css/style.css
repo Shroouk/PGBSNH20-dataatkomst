@@ -119,10 +119,10 @@ ul{
     position: absolute;
     content: "";
     top: 170px;
-    width: 80px;
+    width: 147px;
     height: 3px;
     background: #17a2b8;
-    left: calc(50% - 40px);
+    left: calc(50% - 74px);
 }
 @media(max-width:678px) {
 #lektioner:after{
