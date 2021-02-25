@@ -27,7 +27,7 @@ permalink: /lectures/
                 {% for day in week.days %}
                   {% if day.activities %}
                   
-                     <h6 class="card-subtitle mb-2 text-muted postlower ml-3">{{ day}} - {{day.weekday}}</h6>
+                     <h6 class="card-subtitle mb-2 text-muted postlower ml-3">{{ days.day}} - {{day.weekday}}</h6>
                      
                   {% for activity in day.activities %}
                   {% if activity.activity == "lecture" %}
