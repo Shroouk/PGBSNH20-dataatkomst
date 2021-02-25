@@ -26,9 +26,9 @@ permalink: /lectures/
             <ul class="list-group lectures-list lec-first">
                 {% for day in week.days %}
                   {% if day.activities %}
-                   {% if activity  %}
-                     <h6 class="card-subtitle mb-2 text-muted postlower ml-3">{{ activity.start-full | date: "%F"}} - {{day.weekday}}</h6>
-                     {% endif %}
+                  
+                     <h6 class="card-subtitle mb-2 text-muted postlower ml-3">{{ day}} - {{day.weekday}}</h6>
+                     
                   {% for activity in day.activities %}
                   {% if activity.activity == "lecture" %}
 
