@@ -215,13 +215,13 @@ li a{
 .schedule-card{
   box-shadow: 0 2px 20px -2px rgba(0, 0, 0, 0.1);
 }
-.btn-link h3 , #uppgift{
+.btn-link h5 , #uppgift{
   color: #000;
 }
 .btn-link:hover{
   text-decoration: none;
 }
-.btn-link:hover h3 ,.btn-link:hover #uppgift{
+.btn-link:hover h5 ,.btn-link:hover #uppgift{
   color: #17a2b8;
 }
 .btn-link:focus {
