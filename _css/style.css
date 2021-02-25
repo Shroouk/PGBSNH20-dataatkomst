@@ -267,3 +267,7 @@ table{
 tr td{
   background: #fff;
 }
+
+ul h6:not(:first-of-type){
+    margin-top: 15px;
+}
