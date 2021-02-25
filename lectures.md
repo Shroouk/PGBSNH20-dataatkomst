@@ -24,12 +24,16 @@ permalink: /lectures/
       <div class="row mt-3">
         
             <ul class="list-group lectures-list lec-first">
+            {% assign week.days = {{week.days}} | split: ", " %}
+            {{ week.days | uniq | join: ", " }}
+
                 {% for day in week.days %}
                   {% if day.activities %}
                   {% for activity in day.activities %}
                   {% if activity.activity == "lecture" %}
 
             <li class="list-group-item">
+          
                 <h6 class="card-subtitle mb-2 text-muted postlower ml-3">{{ activity.start-full | date: "%F"}} - {{day.weekday}}</h6>
 
                 <i class="bi bi-chevron-double-right lec-icon"></i> <a href="{{ activity.slug | prepend: site.baseurl }}">{{ activity.title }}</a>
