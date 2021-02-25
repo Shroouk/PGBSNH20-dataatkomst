@@ -18,6 +18,7 @@
 
 
  
+  
   <script>
     $(document).ready(function(){
         $(".collapse.show").each(function(){
@@ -26,7 +27,8 @@
         
         $(".collapse").on('show.bs.collapse', function(){
         	$(this).prev(".card-header").find(".bi").removeClass("bi-chevron-double-right").addClass("bi-chevron-double-down");
-        }).on('hide.bs.collapse', function(){
+        });
+        $(".collapse").on('hide.bs.collapse', function(){
         	$(this).prev(".card-header").find(".bi").removeClass("bi-chevron-double-down").addClass("bi-chevron-double-right");
         });
     });
